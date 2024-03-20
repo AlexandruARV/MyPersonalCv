@@ -1,0 +1,16 @@
+[{
+  
+  "frontend": {
+    
+    "Java Script" : 70,
+    "HTML" : 85,
+    "CSS" : 65
+  } ,
+  
+  "backend":{
+   
+    "C++" : 25,
+    "Node JS" : 10,
+    "Java" : 15
+  }
+}]

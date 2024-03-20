@@ -1,0 +1,58 @@
+:root {
+  --primary-color: black;
+  --secondary-color: white;
+  --gray-color: lightgray;
+}
+body {
+  margin: 0px;
+}
+.header {
+  justify-content: center;
+  display: flex;
+  background-color: var(--gray-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  position: fixed;
+  margin: 0px;
+  width: 100%;
+  z-index: 2;
+}
+
+.nav-main {
+  width: 60rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+
+.nav-logo {
+  margin-left: 3rem;
+  margin-right: auto;
+  font-size: 1.1rem;
+}
+.nav_list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1.3rem;
+  list-style-type: none;
+  align-items: center;
+  font-size: 1.1rem;
+}
+.nav__link {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+/* @media screen and (max-width: 600px) {
+  .button {
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    font-size: 0.7rem;
+  }
+  .name {
+    margin-right: auto;
+    font-size: 1rem;
+  }
+} */

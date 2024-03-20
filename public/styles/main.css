@@ -1,0 +1,247 @@
+:root {
+  /*Colors*/
+  --primary-color: black;
+  --secondary-color: rgb(96, 48, 253);
+  --secondary-color-light: rgb(189, 172, 245);
+  --text-color: rgb(106, 106, 106);
+  --white-color: rgb(240, 240, 240);
+  /*Fonts*/
+  --big-font: 1.5rem;
+  --h1-font: 2.5rem;
+  --normal-font: 1.1rem;
+  --medium-font: 0.9rem;
+  --small-font: 0.75rem;
+
+  /*Fonts-family*/
+  --font-family: "Roboto", sans-serif;
+}
+main {
+  height: 3000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-family);
+}
+
+/*_______________________________  Section Home   ________________________*/
+.section-home {
+  position: relative;
+  top: 100px;
+  height: 60rem;
+  width: 60rem;
+  border: 1px black solid;
+}
+
+.container-main-home {
+  margin-top: 200px;
+  display: grid;
+  grid-template-columns: 25rem 25rem 10rem;
+}
+
+.introduction {
+  font-size: var(--h1-font);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.proffesion {
+  font-size: var(--big-font);
+
+  color: var(--text-color);
+}
+
+.short-description {
+  max-width: 20rem;
+  font-size: var(--normal-font);
+  color: var(--text-color);
+  margin-top: 1rem;
+}
+.donwload-cv,
+.introduction__contact__me {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  font-size: var(--normal-font);
+  border: none;
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.btn__img {
+  height: 1.2rem;
+  width: 1.2rem;
+  margin-left: 0.3rem;
+}
+
+.link__img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.links__list {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.profil-img {
+  background-color: black;
+  width: 15rem;
+  margin-left: 3rem;
+}
+
+/*_______________________________ Section About ________________*/
+.section-about {
+  position: relative;
+  top: 100px;
+  height: 60rem;
+  width: 60rem;
+  border: 1px black solid;
+}
+.skills-top,
+.about-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.skills,
+.about-me {
+  margin-top: 8rem;
+  font-size: var(--h1-font);
+  font-weight: bold;
+}
+.skills:last-child,
+.about-me:last-child {
+  font-size: var(--normal-font);
+  font-weight: 500;
+  color: var(--text-color);
+  margin-top: 0.5rem;
+}
+.my-photo {
+  width: 20rem;
+  height: 20rem;
+  background-color: var(--primary-color);
+}
+
+.aboutme__description {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 30rem 30rem;
+}
+
+.my-personal-description {
+  font-size: var(--normal-font);
+  color: var(--text-color);
+  max-width: 22rem;
+  margin-top: 1rem;
+}
+
+.achievements__list {
+  display: grid;
+  grid-template-columns: 7rem 7rem 7rem;
+  list-style-type: none;
+  margin-top: 2rem;
+  padding: 0px;
+}
+
+.achievement__elem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.achievement {
+  text-align: center;
+  font-size: var(--medium-font);
+  color: var(--text-color);
+}
+
+.number__achievements {
+  font-weight: bold;
+  font-size: var(--big-font);
+}
+
+#download__link {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+/* ___________________________________ Skills-section _____*/
+.section-skills {
+  height: 60rem;
+  width: 60rem;
+  border: 1px black solid;
+  margin-top: 100px;
+}
+
+.skills__flex {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  column-gap: 10rem;
+}
+
+.frontend__skills {
+  position: relative;
+}
+
+.progress__bar {
+  height: 7px;
+  width: 20rem;
+  border-radius: 50%;
+}
+.progress__bar::-webkit-progress-value {
+  border-radius: 0rem;
+  background-color: var(--secondary-color);
+}
+.progress__bar::-webkit-progress-bar {
+  border-radius: 0rem;
+  background-color: var(--secondary-color-light);
+}
+
+.skills__named {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.prog__language {
+  font-size: var(--normal-font);
+  font-weight: 700;
+}
+
+.percentage {
+  color: var(--text-color);
+}
+
+.skills__category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn__arrow {
+  width: 2.5rem;
+  transition-duration: 350ms;
+}
+
+.roation__animation {
+  transform: rotate(180deg);
+  transition-duration: 350ms;
+}
+.category__language {
+  font-size: var(--big-font);
+  font-weight: 700;
+}
+
+/* .skills {
+  opacity: 0;
+} */
+.show__skills {
+  opacity: 0;
+}
