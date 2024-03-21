@@ -38,4 +38,4 @@ const getSkills = async function (url) {
   });
 };
 
-getSkills(`/skills.json`);
+getSkills(`./skills.json`);
