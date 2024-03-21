@@ -1,11 +1,7 @@
-"use strict";
-
-const showSkills = document.querySelectorAll(".show__skills");
-const skills = document.querySelectorAll(".skills");
+import { generateSkills } from "./usefulScripts/generateSkills.js";
 
 const navSkills = document.querySelector(".skills__flex");
-
-const containerSkills = document.querySelectorAll(".skills__category");
+const showSkills = document.querySelectorAll(".show__skills");
 const arrows = document.querySelectorAll(".btn__arrow");
 
 let clickedID;
@@ -32,34 +28,14 @@ navSkills.addEventListener("click", (e) => {
   clickedID = clicked.id;
 });
 
-let html = "";
-
 const getSkills = async function (url) {
   const res = await fetch(`${url}`);
   const data = await res.json();
   const myData = data[0];
 
   showSkills.forEach((el) => {
-    for (const [key, value] of Object.entries(myData[el.id])) {
-      html += `<div class="skills__named">
-    <div class="prog__language">${key}</div>
-    <div class="percentage">${value}%</div>
-    </div>
-    <progress class="progress__bar" value="${value}" max="100"></progress>`;
-    }
-    el.innerHTML = html;
-    html = "";
+    generateSkills(myData, el);
   });
-
-  // for (const [key, value] of Object.entries(b)) {
-  //   html += `<div class="skills__named">
-  //   <div class="prog__language">${key}</div>
-  //   <div class="percentage">${value}%</div>
-  //   </div>
-  //   <progress class="progress__bar" value="${value}" max="100"></progress>`;
-  // }
-  // // showSkills.innerHTML = html;
-  return data;
 };
 
 getSkills(`/skills.json`);

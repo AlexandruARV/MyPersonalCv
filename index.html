@@ -94,15 +94,17 @@
         </div>
       </div>
     </section>
-
+    <div class="space"></div>
     <section class="section-about" id="about">
-      <div class="about-top">
-        <div class="about-me">About Me</div>
-        <div class="about-me">My introduction</div>
+      <div class="sections--header">
+        <div class="section--title">About Me</div>
+        <div class="section--subtitle">My introduction</div>
       </div>
 
       <nav class="aboutme__description">
+
         <div class="my-photo">Photo</div>
+
         <div class="about__grid">
           <div class="my-personal-description">Student passionate in web developement and programming , knowledge in
             frontend and backend developing, learning skills
@@ -140,15 +142,15 @@
       </nav>
       <!-- <progress value="50" max="100"></progress> -->
     </section>
-
+    <div class="space"></div>
     <section class="section-qualification" id="qualification">
 
     </section>
 
     <section class="section-skills" id="skills">
-      <div class="skills-top">
-        <div class="skills">Skills</div>
-        <div class="skills">My tehnical level</div>
+      <div class="sections--header">
+        <div class="section--title">Skills</div>
+        <div class="section--subtitle">My tehnical level</div>
       </div>
       <nav class="skills__flex">
 
@@ -212,14 +214,52 @@
           </div>
         </nav>
       </nav>
-    </section>
 
+      <nav class="nav__qualification">
+        <div class="sections--header">
+          <div class="section--title qual__title">Qualification</div>
+          <div class="section--subtitle">My journey</div>
+        </div>
+
+        <nav class="nav__tab__qualification">
+          <ul class="list__qualification">
+            <li class="high__school__card elem">
+              <img src="./photos/house-user.svg" class="card__img">
+              <div class="title__card">High School</div>
+              <div class="description__card">
+                Graduated from
+                the National Informatics High School in Arad.
+                Profile mathematics and programming
+              </div>
+            </li>
+            <li class="University__card elem">
+              <img src="./photos/university.svg" class="card__img">
+              <div class="title__card">University</div>
+              <div class="description__card">
+                Currently I'm a student from Aurel Vlaicu University Arad. I studie Automation and applied informatics
+                in third year.
+              </div>
+            </li>
+            <li class="work__card elem">
+              <img src="./photos/suitcase.svg" class="card__img">
+              <div class="title__card">Work</div>
+              <div class="description__card">
+                I was working at Systronics SRL since january 2023 as an Electornic Technician.
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </nav>
+
+    </section>
+    <div class="space"></div>
     <section class="section-portfolio" id="portfolio">
 
     </section>
   </main>
 
 </body>
-<script src="/index.js"></script>
+<script defer type="module" src="index.js"></script>
+<script defer type="module" src="/usefulScripts/generateSkills.js"></script>
 
 </html>
