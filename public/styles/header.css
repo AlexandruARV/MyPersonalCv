@@ -6,24 +6,17 @@
 body {
   margin: 0px;
 }
-.header {
-  justify-content: center;
-  display: flex;
-  background-color: var(--gray-color);
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  position: fixed;
-  margin: 0px;
-  width: 100%;
-  z-index: 2;
-}
 
 .nav-main {
-  width: 60rem;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 100px;
+  background-color: var(--gray-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  top: 1rem;
 }
 
 .nav-logo {
@@ -44,8 +37,5 @@ body {
   color: var(--primary-color);
 }
 
-@media screen and (max-width: 1100px) {
-  .header {
-    display: none;
-  }
-}
+/* @media screen and (max-width: 1100px) {
+} */
