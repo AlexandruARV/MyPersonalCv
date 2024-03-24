@@ -384,7 +384,7 @@ main {
     width: auto;
   }
   .sections {
-    width: 27rem;
+    width: 30rem;
   }
   .sections--header {
     display: flex;
@@ -482,5 +482,9 @@ main {
 
   .elem {
     margin-top: 2rem;
+  }
+
+  .section-projects {
+    width: 25rem;
   }
 }
