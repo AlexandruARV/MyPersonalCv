@@ -29,7 +29,6 @@ main {
 }
 
 .space {
-  display: none;
   height: 1px;
   width: 100%;
   background-color: rgb(223, 223, 223);
@@ -65,6 +64,7 @@ main {
   color: var(--text-color);
   margin-top: 1rem;
 }
+.btn__demo,
 .donwload-cv,
 .introduction__contact__me {
   background-color: var(--secondary-color);
@@ -292,12 +292,18 @@ main {
 .section-projects {
   height: 60rem;
   width: 60rem;
-  background-color: lightcoral;
+}
+
+.nav__layout__projects {
+  margin-top: 2rem;
+  width: 60rem;
+  display: flex;
+  justify-content: center;
 }
 
 .slider {
-  width: 30rem;
-  height: 30rem;
+  width: 50rem;
+  height: 25rem;
   justify-content: center;
   position: relative;
   overflow: hidden;
@@ -305,25 +311,58 @@ main {
 
 .slide {
   position: absolute;
-  height: 30rem;
-  width: 30rem;
-  background-color: rgb(202, 202, 202);
+  height: 25rem;
+  width: 50rem;
   transition: transform 0.4s ease;
+  display: grid;
+  grid-template-columns: 20rem 15rem;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.img__slide {
+  width: 20rem;
+  height: 20rem;
+}
+
+.content__slide {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.project__header {
+  font-size: var(--big-font);
+  font-weight: 700;
+}
+.project__text {
+  font-size: var(--normal-font);
+  color: var(--text-color);
+}
+
+.btn__demo {
+  margin-top: 0;
 }
 
 .slider__btn {
   position: absolute;
-
-  z-index: 10;
-  top: 50%;
+  z-index: 1;
+  top: 45%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
+
+.btn__arrow {
+  width: 3rem;
+  height: 3rem;
+}
+
 .slider__btn--left {
-  left: 8%;
-  transform: translate(-50%, -50%);
+  left: 0%;
 }
 .slider__btn--right {
   right: 0%;
-  transform: translate(-50%, -50%);
 }
 
 .dots {
@@ -378,6 +417,8 @@ main {
   margin-top: 0.5rem;
 }
 
+/*_________________________________ Mobile Styles */
+
 @media screen and (max-width: 1100px) {
   /* Common Styles*/
   .main {
@@ -393,10 +434,13 @@ main {
     flex-direction: column;
   }
 
+  .section--title {
+    margin-top: 1rem;
+  }
   /* section home mobile */
   .section-home {
     width: 25rem;
-    height: 42rem;
+    height: 50rem;
   }
   .container-main-home {
     margin-top: 0;
@@ -420,13 +464,14 @@ main {
     width: auto;
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin: 1rem;
   }
   .links__list {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 0;
+    margin-top: 0;
   }
   .link__img {
     width: 4rem;
@@ -436,10 +481,10 @@ main {
   /* ______________________ About me Section*/
 
   .section-about {
-    height: 65rem;
+    height: 67rem;
   }
   .aboutme__description {
-    margin-top: 5rem;
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -462,7 +507,7 @@ main {
   /* ______________________ Skills Section*/
 
   .section-skills {
-    height: 125rem;
+    height: 106rem;
   }
 
   .skills__flex {
@@ -484,8 +529,41 @@ main {
     margin-top: 2rem;
   }
 
+  /*_______________________ Section__ projects*/
   .section-projects {
-    width: 25rem;
+    width: 30rem;
+    margin-top: 2rem;
+  }
+  .nav__layout__projects {
+    width: 30rem;
+  }
+  .slider {
+    width: 30rem;
+    height: 35rem;
+  }
+
+  .slide {
+    position: absolute;
+    height: 30rem;
+    width: 30rem;
+    transition: transform 0.4s ease;
+    display: grid;
+    grid-template-columns: 20rem;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+  }
+
+  .img__slide {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .content__slide {
+    align-items: center;
+  }
+  .slider__btn {
+    top: 40%;
   }
 }
 
