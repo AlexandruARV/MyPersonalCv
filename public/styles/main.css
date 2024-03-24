@@ -381,7 +381,7 @@ main {
 @media screen and (max-width: 1100px) {
   /* Common Styles*/
   .main {
-    width: auto;
+    width: 40rem;
   }
   .sections {
     width: 30rem;
@@ -395,7 +395,7 @@ main {
 
   /* section home mobile */
   .section-home {
-    width: 30rem;
+    width: 25rem;
     height: 42rem;
   }
   .container-main-home {
@@ -486,5 +486,11 @@ main {
 
   .section-projects {
     width: 25rem;
+  }
+}
+
+@media screen and (max-width: 35rem) {
+  .main {
+    width: 30rem;
   }
 }
