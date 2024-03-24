@@ -17,13 +17,19 @@
 }
 main {
   height: 7000px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
   font-family: var(--font-family);
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .space {
+  display: none;
   height: 1px;
   width: 100%;
   background-color: rgb(223, 223, 223);
@@ -375,11 +381,23 @@ main {
 }
 
 @media screen and (max-width: 1100px) {
+  .sections {
+    width: 30rem;
+  }
   .sections--header {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+
+  .section-home {
+    width: 30rem;
+  }
+  .container-main-home {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 25rem;
   }
 
   /* ______________________ About me Section*/
