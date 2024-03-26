@@ -146,6 +146,20 @@
   .slider__btn {
     top: 40%;
   }
+  /*Footer*/
+
+  .section-contact {
+    width: 100%;
+  }
+  .footer {
+    margin-top: 2rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25rem;
+  }
 }
 
 @media screen and (max-width: 35rem) {
