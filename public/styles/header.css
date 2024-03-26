@@ -48,6 +48,7 @@ body {
   text-decoration: none;
   color: var(--primary-color);
 }
+
 .menu--mobile {
   display: none;
 }

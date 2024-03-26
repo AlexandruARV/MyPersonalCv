@@ -16,13 +16,13 @@
   /*Fonts-family*/
   --font-family: "Roboto", sans-serif;
 }
-.body {
-  backdrop-filter: blur(10px);
-}
+
 main {
   height: 4900px;
   background-color: rgb(244, 244, 244);
   font-family: var(--font-family);
+  display: flex;
+  justify-content: center;
 }
 
 .main {
