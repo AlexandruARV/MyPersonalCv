@@ -128,3 +128,46 @@ dotsContainer.addEventListener("click", (e) => {
     goToSlide(e.target.dataset.slide);
   }
 });
+
+const nav = document.querySelector(".nav");
+
+const sectionHome = document.querySelector(".section-home");
+
+console.log(sectionHome);
+
+const stickyNav = function (entries) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) {
+    nav.classList.add("sticky");
+  } else {
+    nav.classList.remove("sticky");
+  }
+  console.log(entry);
+};
+
+const homeObserver = new IntersectionObserver(stickyNav, {
+  root: null,
+  treshold: 0,
+  rootMargin: `-90px`,
+});
+homeObserver.observe(sectionHome);
+
+const mobileMenu = document.querySelector(".menu--mobile");
+const listMenu = document.querySelector(".nav_list");
+const imgMenuMobile = document.querySelector(".menu__mobile__img");
+let isClicked = true;
+mobileMenu.addEventListener("click", (e) => {
+  console.log(imgMenuMobile.src);
+
+  if (isClicked) {
+    listMenu.classList.add("mobile__nav__list");
+    imgMenuMobile.src = `./photos/pics-mobile/times.svg`;
+    isClicked = false;
+  } else {
+    listMenu.classList.remove("mobile__nav__list");
+    imgMenuMobile.src = `./photos/pics-mobile/bars.svg`;
+    isClicked = true;
+  }
+
+  console.log(listMenu);
+});

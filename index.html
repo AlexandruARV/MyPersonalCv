@@ -18,48 +18,69 @@
 </head>
 
 <body>
-  <header class="header">
 
-    <nav class="nav-main">
-      <div class="nav-logo">Alex</div>
-      <ul class="nav_list">
-        <li class="nav__item">
-          <a href="#home" class="nav__link">
-            Home
-          </a>
-        </li>
 
-        <li class="nav__item">
-          <a href="#about" class="nav__link">
-            About
-          </a>
-        </li>
-
-        <li class="nav__item">
-          <a href="#skills" class="nav__link">
-            Skills
-          </a>
-        </li>
-
-        <li class="nav__item">
-          <a href="#projects" class="nav__link">
-            Projects
-          </a>
-        </li>
-
-        <li class="nav__item">
-          <a href="#contactme" class="nav__link">
-            Contact me
-          </a>
-        </li>
-
-      </ul>
-    </nav>
-  </header>
 
   <main>
+
     <div class="main">
+
       <section class="section-home sections" id="home">
+        <nav class="nav">
+          <nav class="nav-main">
+            <div class="nav-logo">Alex</div>
+            <ul class="nav_list">
+
+              <li class="nav__item">
+                <img src="./photos/pics-mobile/estate.svg" class="img__link">
+                <a href="#home" class="nav__link">
+                  Home
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <img src="./photos/pics-mobile/user.svg" class="img__link">
+                <a href="#about" class="nav__link">
+                  About
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <img src="./photos/pics-mobile/clipboard-alt.svg" class="img__link">
+                <a href="#skills" class="nav__link">
+                  Skills
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <img src="./photos/pics-mobile/scenery.svg" class="img__link">
+                <a href="#projects" class="nav__link">
+                  Projects
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <img src="./photos/pics-mobile/message.svg" class="img__link">
+                <a href="#contactme" class="nav__link">
+                  Contact
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <img src="./photos/pics-mobile/university.svg" class="img__link">
+                <a href="#qualification" class="nav__link">
+                  Qualification
+                </a>
+              </li>
+
+            </ul>
+            <button class="menu--mobile">
+              <img src="./photos/pics-mobile/bars.svg" class="menu__mobile__img">
+            </button>
+          </nav>
+
+        </nav>
+
         <div class="container-main-home">
           <div class="profil-img">
             <img src="./photos/github.svg">
@@ -73,8 +94,12 @@
             </div>
             <div class="short-description">Experience in web development, producing high quality work and enjoying the
               rewards.</div>
-            <button class="introduction__contact__me">Contact me <img class="btn__img" src="./photos/message.svg">
-            </button>
+
+            <a href="#contactme" class="nav__link">
+              <button class="introduction__contact__me">Contact me <img class="btn__img" src="./photos/message.svg">
+              </button>
+            </a>
+
           </div>
 
           <div class="links">
@@ -154,9 +179,7 @@
         <!-- <progress value="50" max="100"></progress> -->
       </section>
       <div class="space"></div>
-      <section class="section-qualification" id="qualification">
 
-      </section>
 
       <section class="section-skills sections" id="skills">
         <div class="sections--header">
@@ -226,42 +249,44 @@
           </nav>
         </nav>
 
-        <nav class="nav__qualification">
-          <div class="sections--header">
-            <div class="section--title qual__title">Qualification</div>
-            <div class="section--subtitle">My journey</div>
-          </div>
+        <section class="section-qualification" id="qualification">
+          <nav class="nav__qualification">
+            <div class="sections--header">
+              <div class="section--title qual__title">Qualification</div>
+              <div class="section--subtitle">My journey</div>
+            </div>
 
-          <nav class="nav__tab__qualification">
-            <ul class="list__qualification">
-              <li class="high__school__card elem">
-                <img src="./photos/house-user.svg" class="card__img">
-                <div class="title__card">High School</div>
-                <div class="description__card">
-                  Graduated from
-                  the National Informatics High School in Arad.
-                  Profile mathematics and programming
-                </div>
-              </li>
-              <li class="University__card elem">
-                <img src="./photos/university.svg" class="card__img">
-                <div class="title__card">University</div>
-                <div class="description__card">
-                  Currently I'm a student from Aurel Vlaicu University Arad. I studie Automation and applied informatics
-                  in third year.
-                </div>
-              </li>
-              <li class="work__card elem">
-                <img src="./photos/suitcase.svg" class="card__img">
-                <div class="title__card">Work</div>
-                <div class="description__card">
-                  I was working at Systronics SRL since january 2023 as an Electornic Technician.
-                </div>
-              </li>
-            </ul>
+            <nav class="nav__tab__qualification">
+              <ul class="list__qualification">
+                <li class="high__school__card elem">
+                  <img src="./photos/house-user.svg" class="card__img">
+                  <div class="title__card">High School</div>
+                  <div class="description__card">
+                    Graduated from
+                    the National Informatics High School in Arad.
+                    Profile mathematics and programming
+                  </div>
+                </li>
+                <li class="University__card elem">
+                  <img src="./photos/university.svg" class="card__img">
+                  <div class="title__card">University</div>
+                  <div class="description__card">
+                    Currently I'm a student from Aurel Vlaicu University Arad. I studie Automation and applied
+                    informatics
+                    in third year.
+                  </div>
+                </li>
+                <li class="work__card elem">
+                  <img src="./photos/suitcase.svg" class="card__img">
+                  <div class="title__card">Work</div>
+                  <div class="description__card">
+                    I was working at Systronics SRL since january 2023 as an Electornic Technician.
+                  </div>
+                </li>
+              </ul>
+            </nav>
           </nav>
-        </nav>
-
+        </section>
       </section>
 
       <div class="space"></div>
@@ -339,6 +364,30 @@
 
 
       </section>
+      <div class="space"></div>
+      <section class="section-contact sections" id="contactme">
+        <nav class="footer">
+          <div class="my-data">
+            <div class="name">Alexandru <strong class="last-name">Arvat</strong></div>
+            <div class="email">Email: alexandru.arvat@gmail.com</div>
+            <div class="phone-nr">Phone: 0774078754</div>
+          </div>
+          <ul class="social-media_links">
+            <li class="scoial-media-elem">
+              <img class="img__sm" src="./photos/linkedin.svg">
+            </li>
+            <li class="scoial-media-elem">
+              <img class="img__sm" src="./photos/github.svg">
+            </li>
+            <li class="scoial-media-elem">
+              <img class="img__sm" src="./photos/github.svg">
+            </li>
+          </ul>
+          <div class="coppyright"><span class="logo__cr">&copy;</span> Copyright Bandimcode. All right reserved</div>
+        </nav>
+
+      </section>
+
     </div>
   </main>
 
