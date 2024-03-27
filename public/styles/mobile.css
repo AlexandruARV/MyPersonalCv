@@ -4,21 +4,19 @@
   /* Common Styles*/
 
   main {
-    width: 30rem;
-    display: grid;
-    grid-template-rows: auto;
-    justify-content: center;
-    align-items: center;
-  }
-  .main {
-    width: 30rem;
+    height: 5300px;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .sections {
-    width: 30rem;
+  .main {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
   .sections--header {
     display: flex;
     justify-content: center;
@@ -159,12 +157,19 @@
   }
   /*Footer*/
 
+  .sections {
+    width: 30rem;
+  }
+
   .section-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
   }
   .footer {
     margin-top: 2rem;
-    width: 30rem;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
