@@ -11,10 +11,7 @@
     align-items: center;
   }
   .main {
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 30rem;
   }
 
   .sections--header {
