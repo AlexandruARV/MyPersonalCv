@@ -4,18 +4,20 @@
   /* Common Styles*/
 
   main {
-    display: flex;
+    width: 30rem;
+    display: grid;
+    grid-template-rows: auto;
     justify-content: center;
     align-items: center;
   }
   .main {
-    width: 35rem;
+    width: 30rem;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .sections {
-    width: 35rem;
+    width: 30rem;
   }
   .sections--header {
     display: flex;
