@@ -4,8 +4,10 @@
   /* Common Styles*/
 
   main {
-    height: 5300px;
-    width: auto;
+    width: 30rem;
+
+    height: 4800px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +29,7 @@
   /* section home mobile */
   .section-home {
     margin-top: 4rem;
-    width: 25rem;
+    width: 30rem;
     height: 50rem;
   }
   .container-main-home {
@@ -162,7 +164,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 30rem;
   }
   .footer {
     margin-top: 2rem;
